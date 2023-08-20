@@ -6,7 +6,7 @@ import hashlib
 import uuid
 
 
-class User():
+class User:
     """
     User class:
     - id: public string unique (uuid)
@@ -57,7 +57,7 @@ class User():
         return hashlib.md5(pwd.encode()).hexdigest().upper() == self.__password
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print("Test User")
 
     user_1 = User()
